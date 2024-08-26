@@ -14,13 +14,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/d709f1b460.js" crossorigin="anonymous"></script>
 
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
+                        primary: '#ABEF5F',
+                        secondary: '#ABEF5F80',
+                        dark: '#212121',
+                        'light-dark': '#737373',
                     }
                 },
                 fontFamily: {
@@ -33,7 +38,64 @@
 </head>
 
 <body class="font-manrope">
-    <h1>Hello World!</h1>
+    <header>
+        <!-- Navbar -->
+        <nav class=" hidden lg:block container mx-auto">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                        </div>
+                        <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a class="text-dark text-base font-medium">Home</a></li>
+                            <li><a class="text-light-dark text-base">Services</a></li>
+                            <li><a class="text-light-dark text-base">Portfolio</a></li>
+                            <li><a class="text-light-dark text-base">Blogs</a></li>
+                            <li><a class="text-light-dark text-base">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <a class="block text-dark text-3xl font-extrabold"> <span class="bg-primary inline-block p-2 w-10 h-10 text-center rounded-full justify-center items-center text-xl font-thinik"><i class="fa-solid fa-arrow-right -rotate-45"></i></span> Rinterio</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 flex justify-center items-center">
+                        <li><a class="text-dark text-base font-semibold">Home</a></li>
+                        <li><a class="text-light-dark text-base font-medium">Services</a></li>
+                        <li><a class="text-light-dark text-base font-medium">Portfolio</a></li>
+                        <li><a class="text-light-dark text-base font-medium">Blogs</a></li>
+                        <li><a class="text-light-dark text-base font-medium">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="bg-primary text-xl font-extrabold rounded-3xl px-5 py-1 flex justify-center items-center gap-4">Book consult <span class="inline-block bg-dark text-white p-2 w-10 h-10 text-center rounded-full justify-center items-center text-xl font-thinik"><i class="fa-solid fa-arrow-right -rotate-45"></i></span></a>
+                </div>
+            </div>
+        </nav>
+        <!-- Hero Section -->
+        <div>
+            <div class="hero min-h-screen">
+                <div class="hero-content text-center">
+                    <div class="max-w-5xl">
+                        <img class="mx-auto" src="assets/banner.png" alt="">
+                        <h1 class="text-4xl lg:text-6xl text-dark font-extrabold leading-tight mt-4">A barn house of this design has a striking appearance</h1>
+                        <p class="py-6 px-5 text-base text-light-dark font-medium leading-8">
+                            The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+                        </p>
+                        <a href="#" class="btn bg-secondary w-full lg:w-auto border-primary rounded-full font-extrabold text-lg">View Details <span class="bg-primary p-2 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                          </svg></span>
+                          </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 </body>
 
 </html>
