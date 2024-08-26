@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-theme="light" lang="en">
+<html data-theme="cupcake" lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -26,6 +26,7 @@
                         secondary: '#ABEF5F80',
                         dark: '#212121',
                         'light-dark': '#737373',
+                        'deep-dark': '#494949',
                     }
                 },
                 fontFamily: {
@@ -38,9 +39,9 @@
 </head>
 
 <body class="font-manrope">
-    <header>
+    <header class="bg-white ">
         <!-- Navbar -->
-        <nav class=" hidden lg:block container mx-auto">
+        <nav class="hidden lg:block container mx-auto">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
                     <div class="dropdown">
@@ -84,7 +85,7 @@
                     <div class="max-w-5xl">
                         <img class="mx-auto" src="assets/banner.png" alt="">
                         <h1 class="text-4xl lg:text-6xl text-dark font-extrabold leading-tight mt-4">A barn house of this design has a striking appearance</h1>
-                        <p class="py-6 px-5 text-base text-light-dark font-medium leading-8">
+                        <p class="py-6 px-5 text-base text-deep-dark font-semibold leading-8">
                             The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
                         </p>
                         <a href="#" class="btn bg-secondary w-full lg:w-auto border-primary rounded-full font-extrabold text-lg">View Details <span class="bg-primary p-2 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
@@ -96,6 +97,44 @@
             </div>
         </div>
     </header>
+
+    <main>
+        <!-- About Section -->
+        <section class="container mx-auto">
+            <div class="py-8 lg:py-28 px-4 flex flex-col lg:flex-row gap-8">
+                <div class="flex-1 lg:px-6">
+                    <div class="bg-white w-44 justify-center flex items-center text-lg font-bold px-4 py-2 mx-auto lg:mx-0 rounded-full">
+                        <span class="mr-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                          </svg>
+                        </span> About Us</div>
+                    <h1 class="text-3xl my-4 lg:text-6xl text-dark font-extrabold leading-tight text-center lg:text-left">We design thoughtful, liveable spaces</h1>
+                    <p class="py-6 px-2 text-base text-deep-dark font-semibold leading-8 text-center lg:text-left">
+                        The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
+                    </p>
+
+                    <div class="flex gap-4 bg-white rounded-xl p-5 mb-6 lg:w-5/6">
+                        <div><img src="assets/commercial.png" alt=""></div>
+                        <div>
+                            <h3 class="text-lg font-extrabold mb-3 text-deep-dark">Commercial</h3>
+                            <p class="text-md font-bold text-light-dark leading-7">The barn house captivates with its blend of rustic charm and modern.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 bg-white rounded-xl p-5 mb-8 lg:w-5/6">
+                        <div><img src="assets/residential.png" alt=""></div>
+                        <div>
+                            <h3 class="text-lg font-extrabold mb-3 text-deep-dark">Residential</h3>
+                            <p class="text-md font-bold text-light-dark leading-7">Prime residential flats available for peaceful and convenient living.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="border border-dashed border-gray-400 flex-1">
+                    <img class="object-cover lg:object-fill h-60 lg:h-full w-full rounded-2xl" src="assets/Rectangle.png" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
