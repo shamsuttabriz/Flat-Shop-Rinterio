@@ -45,40 +45,40 @@
 <body class="font-manrope">
     <header class="bg-white ">
         <!-- Navbar -->
-        <nav class="hidden lg:block container mx-auto">
-            <div class="navbar">
-                <div class="navbar-start">
-                    <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M4 6h16M4 12h8m-8 6h16" />
-                      </svg>
-                        </div>
-                        <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                            <li><a class="text-dark text-base font-medium">Home</a></li>
-                            <li><a class="text-light-dark text-base">Services</a></li>
-                            <li><a class="text-light-dark text-base">Portfolio</a></li>
-                            <li><a class="text-light-dark text-base">Blogs</a></li>
-                            <li><a class="text-light-dark text-base">Contact Us</a></li>
-                        </ul>
-                    </div>
-                    <a class="block text-dark text-3xl font-extrabold"> <span class="bg-primary inline-block p-2 w-10 h-10 text-center rounded-full justify-center items-center text-xl font-thinik mr-2"><i class="fa-solid fa-arrow-right -rotate-45"></i></span> Rinterio</a>
-                </div>
-                <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1 flex justify-center items-center">
-                        <li><a class="text-dark text-base font-semibold">Home</a></li>
-                        <li><a class="text-light-dark text-base font-medium">Services</a></li>
-                        <li><a class="text-light-dark text-base font-medium">Portfolio</a></li>
-                        <li><a class="text-light-dark text-base font-medium">Blogs</a></li>
-                        <li><a class="text-light-dark text-base font-medium">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="navbar-end">
+        <nav class="container mx-auto py-4 px-4">
+            <div class="flex justify-between items-center">
+                <h1>
+                    <a class="block text-dark text-3xl font-extrabold cursor-pointer"> <span class="bg-primary inline-block p-2 w-10 h-10 text-center rounded-full justify-center items-center text-xl font-thinik mr-2"><i class="fa-solid fa-arrow-right -rotate-45"></i></span> Rinterio</a>
+                </h1>
+                <ul class="hidden lg:flex gap-6">
+                    <li><a class="cursor-pointer text-dark text-base font-bold">Home</a></li>
+                    <li><a class="cursor-pointer text-light-dark font-medium">Services</a></li>
+                    <li><a class="cursor-pointer text-light-dark font-medium">Portfolio</a></li>
+                    <li><a class="cursor-pointer text-light-dark font-medium">Blogs</a></li>
+                    <li><a class="cursor-pointer text-light-dark font-medium">Contact Us</a></li>
+                </ul>
+                <div class="hidden lg:flex gap-4 items-center">
+                    <p class="w-7 h-7 rounded-full bg-gray-100 border border-gray-400 p-5 flex justify-center items-center cursor-pointer">
+                        <span class="text-light-dark"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                          </svg></span>
+                    </p>
+                    <p class="w-7 h-7 rounded-full bg-gray-100 border border-gray-400 p-5 flex justify-center items-center cursor-pointer">
+                        <span class="text-light-dark">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                              </svg>
+                        </span>
+                    </p>
                     <a class="bg-primary text-xl font-bold rounded-3xl px-5 py-1 flex justify-center items-center gap-4">Book consult <span class="inline-block bg-dark text-white p-2 w-10 h-10 text-center rounded-full justify-center items-center text-xl font-thinik"><i class="fa-solid fa-arrow-right -rotate-45"></i></span></a>
+                </div>
+                <div class="block lg:hidden p-3 bg-gray-100 rounded-full cursor-pointer">
+                    <small>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+                      </svg>
+                      
+                  </small>
                 </div>
             </div>
         </nav>
@@ -458,7 +458,7 @@
     <footer class="bg-black py-28 px-6">
         <div class="container mx-auto">
             <div class="flex justify-center">
-                <a class="block text-dark text-3xl font-extrabold text-white"> <span class="bg-primary inline-block p-2 w-10 h-10 text-center rounded-full justify-center items-center text-xl font-thinik mr-2"><i class="fa-solid fa-arrow-right -rotate-45"></i></span> Rinterio</a>
+                <a class="block text-3xl font-extrabold text-white"> <span class="bg-primary inline-block p-2 w-10 h-10 text-center rounded-full justify-center items-center text-xl font-thinik mr-2 text-dark"><i class="fa-solid fa-arrow-right -rotate-45"></i></span> Rinterio</a>
             </div>
             <p class="text-light-dark font-bold my-6 text-center lg:px-80">He footer section includes essential links, contact details, social media icons, and a subscription form, designed for simplicity and usability.</p>
             <ul class="flex flex-col lg:flex-row justify-center items-center gap-4 my-12">
